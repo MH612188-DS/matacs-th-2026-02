@@ -1,1 +1,38 @@
+[
+  {
+    "proposal": "A",
+    "rank": 1,
+    "status": "ranked",
+    "score": 97.00,
+    "reason": "Strongest overall proposal with 14 qualifying projects, competitive pricing, 12-week completion, full warranty scores, and all team requirements satisfied."
+  },
+  {
+    "proposal": "E",
+    "rank": 2,
+    "status": "ranked",
+    "score": 84.39,
+    "reason": "Strong proposal with eight qualifying projects, complete mandatory requirements, full warranty scores, and a well-defined project team."
+  },
+  {
+    "proposal": "C",
+    "rank": 3,
+    "status": "ranked",
+    "score": 76.68,
+    "reason": "Meets mandatory requirements and has strong experience and warranties, but lacks evidence of a safety plan and performance monitoring plan."
+  },
+  {
+    "proposal": "B",
+    "rank": null,
+    "status": "flagged",
+    "score": null,
+    "reason": "Electrical contractor licensing is unresolved because the proposed subcontractor's licence details are not provided."
+  },
+  {
+    "proposal": "D",
+    "rank": null,
+    "status": "flagged",
+    "score": null,
+    "reason": "Mandatory requirements are satisfied, but the completion timeline is unspecified, preventing complete weighted scoring."
+  }
+]
 
