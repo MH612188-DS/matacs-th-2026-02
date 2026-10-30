@@ -17,3 +17,27 @@ The workflow will split between two parts: the first one is the information extr
 
 AI is used where language understanding is valuable. Rules are used for eligibility, calculations, and ranking because these operations must be predictable, testable, and repeatable.
 
+## 2. Consistency and Explainability
+
+The system uses a versioned scoring configuration and deterministic scoring rules to ensure repeatable results. Given identical proposal data, criteria, and scoring configuration, the system should produce identical scores and rankings.
+
+The weighted criteria are:
+
+| Criterion | Weight |
+|---|---:|
+| Relevant experience | 30% |
+| Price | 25% |
+| Timeline | 15% |
+| Warranty | 15% |
+| Team and approach | 15% |
+| **Total** | **100%** |
+
+Each criterion receives a score between 0 and 100. The final score is calculated as:
+
+`Final Score = (Experience × 0.30) + (Price × 0.25) + (Timeline × 0.15) + (Warranty × 0.15) + (Team × 0.15)`
+
+The proposed scoring rules use a capped experience score based on qualifying installations, relative price scoring against the lowest eligible bid, predefined timeline scoring bands, normalized panel and workmanship warranty scores, and a checklist for team and approach requirements.
+
+These scoring thresholds are explicit design assumptions because the assessment provides weights but does not prescribe normalization formulas.
+
+Reviewers can inspect each criterion's score, supporting evidence, missing information, and contribution to the final result. Unknown values are not silently converted into confirmed facts or arbitrary scores.
