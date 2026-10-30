@@ -41,3 +41,17 @@ The proposed scoring rules use a capped experience score based on qualifying ins
 These scoring thresholds are explicit design assumptions because the assessment provides weights but does not prescribe normalization formulas.
 
 Reviewers can inspect each criterion's score, supporting evidence, missing information, and contribution to the final result. Unknown values are not silently converted into confirmed facts or arbitrary scores.
+
+## 3. Human in the Loop
+
+Human will remain in the loop to make the systems more resilient and less prone to hallucinations. The human will be the one that has the final verdict on what the results are telling.
+
+1. A reviewer uploads proposals.
+2. The system extracts information from the documents and presents it with supporting evidence.
+3. A reviewer then verifies uncertain, missing, or conflicting information.
+4. Flagging the proposals requiring clarification so that it can be reviewed.
+5. The reviewer can approve documented corrections or override results with a recorded reason.
+6. The final award decision remains with the human reviewer.
+
+The audit log records proposal identifiers, extracted data, evidence references, criteria and scoring versions, model and prompt versions, calculated scores, reviewer actions, overrides, timestamps, and the final decision. The system will provide recommendations and not autonomous procurement decisions.
+
